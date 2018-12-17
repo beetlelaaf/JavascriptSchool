@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // for(var i=0; i<3; i++) {
+        //     document.write('<br>Dit is lus: ' + i);
+        // }
+
+        // var studenten = new Array('Zakaria', 'Albert', 'Hamsa', 'Mike', 'Pieter', 'Harry');
+        // for(var i=0; i<studenten.length; i++) {
+        //     document.write('<br>Element ' + i + ' is ' + studenten[i]);
+        // }
+
+        // for(var i=0; i<studenten.length; i+=2) {
+        //     document.write('<br>Element ' + i + ' is ' + studenten[i]);
+        // }
+
+        var tekst = 'Hij lijkt een beetje op Nelson Mandela';
+        lengte = tekst.length;
+
+        var a = 0;
+        var e = 0;
+        var i = 0;
+        var o = 0;
+        var u = 0;
+
+        document.write('<br>');
+        for(x=0; x<lengte; x++) {
+            teken = tekst.charAt(x);
+            if(teken === "a") {
+                a++;
+            }
+            else if(teken === "e") {
+                e++;
+            }
+            else if(teken === "i") {
+                i++;
+            }
+            else if(teken === "o") {
+                o++;
+            }
+            else if(teken === "u") {
+                u++;
+            }
+        }
+
+        document.write('<br>Tekst bevat ' + a + ' a\'s');
+        document.write('<br>Tekst bevat ' + e + ' e\'s');
+        document.write('<br>Tekst bevat ' + i + ' i\'s');
+        document.write('<br>Tekst bevat ' + o + ' o\'s');
+        document.write('<br>Tekst bevat ' + u + ' u\'s');
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Methodes</title>
+</head>
+
+<body>
+    <script>
+       var vandaag = new Date();
+       document.write('<br>Opageve 46: ' + vandaag);
+
+       var nu = Date.now();
+       var eenmin = 60000;
+       var morgen = new Date(nu + eenmin);
+       document.write('<br>Opgave 47: ' + morgen);
+
+       //datum met date string
+       var schooljaar = new Date("2015-09-04");
+
+       //datum met datum en tijd string
+       var wintertijd = new Date("2015-10-29T03:00:00");
+       document.write('<br>Opgave 48: Begin wintertijd is: ' + wintertijd);
+       
+       var geboortedatum = new Date("2001-08-12T11:50:00");
+       document.write('<br>Opgave 48: Mijn geoortedatum is: ' + geboortedatum);
+
+       var beginSchooldag = new Date(2015,8,9,8,30);
+       document.write('<br>Opgave 49: Begin  schooldag: ' + beginSchooldag);
+
+       var nu = Date.now();
+       document.write('<br>Opgave 50: Nu: ' + nu);
+       var min = ((nu - beginSchooldag) / eenmin);
+       document.write('<br>Aantal minuten sinds begin schooldag: ' + min.toFixed(0));
+       
+       
+    </script>
+</body>
+
+</html>

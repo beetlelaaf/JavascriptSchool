@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>if-opdracht</title>
+</head>
+<body>
+    <script>
+        var creditcard = confirm('Heeft u een credit kaart?');
+        var leeftijd = parseInt(prompt('Wat is uw leeftijd?'));
+
+        if(leeftijd >= 18) {
+            bevoegd = true;
+        } else {
+            bevoegd = false;
+        }
+
+        if(bevoegd && creditcard) {
+            alert('U mag 1000 euro lenen.');
+        } else if(bevoegd && !creditcard) {
+            alert('U mag 500 euro lenen');
+        } else {
+            alert('U mag geen geld lenen.');
+        }
+         
+
+    </script>
+</body>
+</html>

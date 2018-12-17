@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Data Methodes</title>
+</head>
+<body>
+    <script>
+       var maanden = new Array('januari', 'februari', 'maart', 'april', 'mei', 'juni', 'juli', 'augustus', 'september', 'oktober', 'november', 'december');
+       var weekdag = new Array('maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag');
+       document.write('<br>Opgave 51: ' + new Date());
+       
+       var vandaag = new Date();
+       var n = weekdag[vandaag.getDay()];
+       var d = vandaag.getDate();
+       var m = maanden[vandaag.getMonth()];
+       var j = vandaag.getFullYear();
+
+       document.write('<br>Opgave 51: ' + n + ' ' + d + ' ' + m + ' ' + j);
+    </script>
+</body>
+</html>

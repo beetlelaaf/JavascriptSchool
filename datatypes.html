@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Datatypes</title>
+
+</head>
+<body>
+    <script>
+     var naam = "Carl";
+     var adres = "Kruislaan 111";
+     document.write("<br>Opgave10: Datatype van naam is: " + typeof name);
+
+     var leerplichtig = true;
+     var volwassen = false;
+     document.write("<br>Opgave11: Datatype van leerplicht is: " + typeof leerplichtig);
+
+     var temperatuur = -10;
+     document.write("<br>Opgave12: Datatype van temperatuur is: " + typeof temperatuur);
+
+     var btw = 0.21 * 100;
+     document.write("<br>Opgave13: Waarde van btw is: " + btw);
+
+     var string = "33445";
+     resultaat = parseInt(string); 
+     document.write("<br>Opgave14: parseInt(string) Resultaat is: " + typeof resultaat  + ": " + resultaat);
+
+     var string = "3.3445";
+     resultaat = parseFloat(string);
+     document.write("<br>Opgave15: parseFloat(string) Resultaat is: " + typeof resultaat + ": " +resultaat);
+
+     var float = 3.3445;
+     resultaat = parseInt(float);
+     document.write("<br>Opgave16: parseInt(Float) Resultaat is: " + typeof resultaat + ": " +resultaat);
+
+     var float = 3.3445;
+     resultaat = float.toString();
+     document.write("<br>Opgave17: float.toString() Resultaat is: " + typeof resultaat + ": " +resultaat);
+
+     var float = 3.3445;
+     resultaat = float.toFixed();
+     document.write("<br>Opgave18: float.toFixed() Resultaat is: " + typeof resultaat + ": " +resultaat);
+
+     var twee; //variabelen twee ongedefineerd.
+     document.write("<br>Opgave19: Datatype van twee is: " + typeof twee);
+
+     var een = 1;
+     var drie = een * twee; //var twee nog niet gemaakt.
+     document.write("<br>Opgave20: De waarde van drie is: " + drie);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="labo10.js"></script>
+</head>
+
+<form>
+    <input type="text" id="bedrag" placeholder="bedrag">
+    <select id="valuta">
+        <option value="dollar/euro">Dollar/Euro</option>
+        <option value="euro/doller">Euro/Dollar</option>
+        <option value="euro/roebel">Euro/Roebel</option>
+        <option value="roebel/euro">Roebel/Euro</option>
+    </select>
+    <input type="button" name="converteren" value="converteren" onclick="exchange(); document.write(exchange(bedrag.value));">
+</form>
+
+<body>
+</body>
+
+</html>
