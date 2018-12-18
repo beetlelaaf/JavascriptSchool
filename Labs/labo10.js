@@ -1,14 +1,14 @@
 function exchange(bedrag, valuta) {
-    valuta = document.getElementById("valuta").selectedIndex;
-    if(valuta == 0) {
-        bedrag * euro_dollarkoers();        
-    } else if(valuta == 1) {
-        bedrag * dollar_eurokoers();
-    } else if(valuta == 2) {
-        bedrag * euro_roebelkoers();
+    if(valuta == "dollar/euro") {
+        bedrag = bedrag * euro_dollarkoers();        
+    } else if(valuta == "euro/dollar") {
+        bedrag = bedrag * dollar_eurokoers();
+    } else if(valuta == "roebel/euro") {
+        bedrag = bedrag * euro_roebelkoers();
     } else {
-        bedrag * roebel_eurokoers();
+        bedrag = bedrag * roebel_eurokoers();
     }
+    return(bedrag);
 
 }
 

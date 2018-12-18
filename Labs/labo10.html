@@ -7,15 +7,16 @@
     <script src="labo10.js"></script>
 </head>
 
-<form>
-    <input type="text" id="bedrag" placeholder="bedrag">
-    <select id="valuta">
+<form name="form">
+    <input type="text" name="bedrag" placeholder="bedrag">
+    <select name="valuta">
         <option value="dollar/euro">Dollar/Euro</option>
         <option value="euro/doller">Euro/Dollar</option>
         <option value="euro/roebel">Euro/Roebel</option>
         <option value="roebel/euro">Roebel/Euro</option>
     </select>
-    <input type="button" name="converteren" value="converteren" onclick="exchange(); document.write(exchange(bedrag.value));">
+    <input type="button" name="converteren" value="converteren" onclick="document.write('conversie in euros: ' +
+    exchange(document.form.bedrag.value, document.form.valuta.value))">
 </form>
 
 <body>
