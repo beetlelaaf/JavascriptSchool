@@ -9,8 +9,9 @@ function exchange(bedrag, valuta) {
         bedrag = bedrag * roebel_eurokoers();
     }
     return(bedrag);
-
 }
+
+//Converteerders
 
 function euro_dollarkoers() {
     return(1.36);
